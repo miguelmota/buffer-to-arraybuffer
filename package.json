@@ -1,0 +1,29 @@
+{
+  "name": "buffertoarraybuffer",
+  "version": "0.0.1",
+  "description": "Convert Buffer to ArrayBuffer",
+  "main": "buffer-to-arraybuffer.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmota/buffer-to-arraybuffer"
+  },
+  "keywords": [
+    "range",
+    "date"
+  ],
+  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguelmota/buffer-to-arraybuffer/issues"
+  },
+  "homepage": "https://github.com/miguelmota/buffer-to-arraybuffer",
+  "dependencies": {
+    "tape": "^3.0.3"
+  }
+}
