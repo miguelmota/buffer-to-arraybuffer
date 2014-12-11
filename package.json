@@ -14,8 +14,8 @@
     "url": "https://github.com/miguelmota/buffer-to-arraybuffer"
   },
   "keywords": [
-    "range",
-    "date"
+    "buffer",
+    "array"
   ],
   "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
   "license": "MIT",
