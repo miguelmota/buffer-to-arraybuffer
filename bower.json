@@ -1,5 +1,5 @@
 {
-  "name": "buffertoarraybuffer",
+  "name": "buffer-to-arraybuffer",
   "main": "buffer-to-arraybuffer.js",
   "version": "0.0.1",
   "homepage": "https://github.com/miguelmota/buffer-to-arraybuffer",
