@@ -1,29 +1,24 @@
-# rangedate
+# buffer-to-arraybuffer
 
-Generate an array of dates
+Convert Buffer to ArrayBuffer
 
 # Install
 
 ```bash
-npm install rangedate
+npm install buffertoarraybuffer
 ```
 
 # Usage
 
 ```javascript
-var rangeDate = require('rangedate');
+var BufferToArrayBuffer= require('buffertoarraybuffer');
 
-rangeDate(new Date(2014,11,06), new Date(2014,11,10))
-  .map(function(date) {
-    return date.getDate();
-  });
+var b = new Buffer(12);
+b.write('abc', 0);
 
-// [6,7,8,9,10]
+var ab = bufferToArrayBuffer(b);
+String.fromCharCode(ab[0]) // 'a'
 ```
-
-# Docs
-
-#### `rangeDate(startDate, [endDate=Date.now()])`
 
 # License
 

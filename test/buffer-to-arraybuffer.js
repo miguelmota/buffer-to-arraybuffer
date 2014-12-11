@@ -9,11 +9,12 @@ function bufferEqual(a, b) {
 }
 
 test('bufferToArrayBuffer', function (t) {
-  t.plan(1);
+  t.plan(2);
 
   var str = 'abc';
 
   var b = new Buffer(12);
+  b.write(str, 0);
 
   var ab = new ArrayBuffer(12);
   var v = new DataView(ab);
@@ -21,5 +22,8 @@ test('bufferToArrayBuffer', function (t) {
     v[i] = s.charCodeAt(0);
   });
 
-  t.strictEqual(bufferEqual(bufferToArrayBuffer(b), ab), true);
+  var cab = bufferToArrayBuffer(b);
+
+  t.strictEqual(bufferEqual(cab, ab), true);
+  t.equal(String.fromCharCode(cab[0]), 'a');
 });
