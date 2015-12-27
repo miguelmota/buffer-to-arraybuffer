@@ -1,5 +1,5 @@
 (function(root) {
-  var isArrayBufferSupported = !!(new Buffer(0).buffer);
+  var isArrayBufferSupported = (new Buffer(0)).buffer instanceof ArrayBuffer;
 
   var bufferToArrayBuffer = isArrayBufferSupported ? bufferToArrayBufferSlice : bufferToArrayBufferCycle;
 
