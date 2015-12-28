@@ -3,11 +3,11 @@
 
   var bufferToArrayBuffer = isArrayBufferSupported ? bufferToArrayBufferSlice : bufferToArrayBufferCycle;
 
-  function bufferToArrayBufferSlice (buffer) {
+  function bufferToArrayBufferSlice(buffer) {
     return buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
   }
 
-  function bufferToArrayBufferCycle (buffer) {
+  function bufferToArrayBufferCycle(buffer) {
     var ab = new ArrayBuffer(buffer.length);
     var view = new Uint8Array(ab);
     for (var i = 0; i < buffer.length; ++i) {
@@ -28,5 +28,4 @@
   } else {
     root.bufferToArrayBuffer = bufferToArrayBuffer;
   }
-
 })(this);

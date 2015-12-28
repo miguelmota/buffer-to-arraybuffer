@@ -11,13 +11,13 @@ npm install buffer-to-arraybuffer
 # Usage
 
 ```javascript
-var BufferToArrayBuffer = require('buffer-to-arraybuffer');
+var bufferToArrayBuffer = require('buffer-to-arraybuffer');
 
 var b = new Buffer(12);
 b.write('abc', 0);
 
 var ab = bufferToArrayBuffer(b);
-String.fromCharCode(ab[0]) // 'a'
+String.fromCharCode.apply(null, new Uint8Array(ab)); // 'abc'
 ```
 
 # License
