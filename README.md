@@ -2,6 +2,11 @@
 
 Convert Buffer to ArrayBuffer
 
+If you only target node v4.3+ you can simply just do
+```js
+new Buffer([12]).buffer
+```
+
 # Install
 
 ```bash
