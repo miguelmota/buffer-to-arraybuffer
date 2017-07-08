@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/miguelmota/buffer-to-arraybuffer",
   "devDependencies": {
-    "tape": "^3.0.3"
+    "tape": "^4.7.0"
   }
 }
