@@ -17,7 +17,7 @@ test('bufferToArrayBuffer', function (t) {
 
   var str = 'abc';
 
-  var b = new Buffer(str.length);
+  var b = Buffer.alloc(str.length);
   b.write(str, 0);
 
   var ab = new ArrayBuffer(str.length);
